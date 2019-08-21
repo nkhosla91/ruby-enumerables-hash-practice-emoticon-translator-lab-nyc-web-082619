@@ -10,6 +10,7 @@ def load_library(emoticons)
      hash['get_meaning'] = word
      hash['get_emoticon'] = ['get_meaning']
   end
+  hash
 end
 
 def get_japanese_emoticon
