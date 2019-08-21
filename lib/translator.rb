@@ -1,5 +1,6 @@
 # require modules here
 require 'yaml'
+require 'pry'
 
 def load_library(emoticons)
   data = YAML.load_file(emoticons)
@@ -10,6 +11,7 @@ def load_library(emoticons)
      hash['get_meaning'] = word
      hash['get_emoticon'] = ['get_meaning']
   end
+  binding.pry
   hash
 end
 
