@@ -8,10 +8,11 @@ def load_library(emoticons)
   hash = {'get_emoticon' => {}, 'get_meaning' => {}}
   
   data.each do |word, innerhash|
+    binding.pry
      hash['get_meaning'] = word
      hash['get_emoticon'] = 
   end
-  binding.pry
+  #binding.pry
   hash
 end
 
