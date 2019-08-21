@@ -12,7 +12,7 @@ def load_library(emoticons)
      hash['get_meaning'][innerhash[1]] = word
      hash['get_emoticon'][innerhash[0]] = data[word][1]
   end
-  #binding.pry
+  binding.pry
   hash
 end
 
