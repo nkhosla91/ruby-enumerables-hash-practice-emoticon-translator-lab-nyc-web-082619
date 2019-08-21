@@ -7,8 +7,8 @@ def load_library(emoticons)
   emoticons_lib = {:get_emoticon => {}, :get_meaning => {}}
   
   data.each do |word, set|
-     emoticons_lib[get_]meaning
-    
+     emoticons_lib[get_meaning] = word
+     emoticons_lib[get_emoticon] = set
   end
 end
 
