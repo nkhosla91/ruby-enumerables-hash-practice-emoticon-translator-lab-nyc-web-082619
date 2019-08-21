@@ -4,11 +4,11 @@ require 'yaml'
 def load_library(emoticons)
   data = YAML.load_file(emoticons)
   
-  emoticons_lib = {:get_emoticon => {}, :get_meaning => {}}
+  hash = {:get_emoticon => {}, :get_meaning => {}}
   
   data.each do |word, set|
-     emoticons_lib[get_meaning] = word
-     emoticons_lib[get_emoticon] = set
+     hash[get_meaning] = word
+     hash[get_emoticon] = set
   end
 end
 
