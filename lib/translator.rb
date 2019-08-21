@@ -2,8 +2,8 @@
 require 'yaml'
 require 'pry'
 
-def load_library(emoticons)
-  data = YAML.load_file(emoticons)
+def load_library(file)
+  data = YAML.load_file(file)
   
   hash = {'get_emoticon' => {}, 'get_meaning' => {}}
   
@@ -16,8 +16,11 @@ def load_library(emoticons)
   hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  hash = load_library(file)
+  answer = hash['get_emoticon'][emoticon]
+  answer
+  
 end
 
 def get_english_meaning
